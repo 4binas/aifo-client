@@ -38,6 +38,6 @@ class Chatbot:
         
           img = Image.open("test")
           img.show()
-
-    os.remove("test")
+          os.remove("test")
+    
     return (response.query_result.fulfillment_text or response.query_result.fulfillment_messages[0].text.text[0] or "Sorry, can you repeat that?")
