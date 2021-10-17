@@ -1,6 +1,6 @@
 from PIL import Image
-import requests
-from io import BytesIO
+import os
+import urllib.request
 
 class Chatbot:
   def __init__(self, project_id, session_id, language_code, bot_name):
@@ -28,15 +28,16 @@ class Chatbot:
 
   def get_response(self, msg):
     response = self.__detect_intent_texts__(msg)
-    print(response)
-
+  
     if len(response.query_result.fulfillment_messages) > 1:
       for message in response.query_result.fulfillment_messages:
         if message.card:
-          print("Test: " + message.card.image_uri)
-          img_url = message.card.image_uri
-          img_response = requests.get(img_url, stream=True)
-          img_data = img_response.content
-          img = Image.open(BytesIO(img_data))
+          urllib.request.urlretrieve(
+            message.card.image_uri,
+            "test")
+        
+          img = Image.open("test")
           img.show()
+
+    os.remove("test")
     return (response.query_result.fulfillment_text or response.query_result.fulfillment_messages[0].text.text[0] or "Sorry, can you repeat that?")
