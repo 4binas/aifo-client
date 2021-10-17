@@ -1,1 +1,1 @@
-# aifo_client
+# aifo-client
