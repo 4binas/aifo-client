@@ -2,7 +2,7 @@ import os
 from service.chatbot import Chatbot
 from view.chat_gui import ChatGUI
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "E:/User/Documents/GitHub/AIFo/aifo-client/key.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./key.json"
 
 chatbot = Chatbot("aifo-project-jpdg", "abcde", "en-US", "SBBob")
 
