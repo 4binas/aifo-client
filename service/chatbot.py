@@ -8,8 +8,6 @@ class Chatbot:
     self.bot_name = bot_name
   
   def __detect_intent_texts__(self, text):
-    
-
     session_client = dialogflow.SessionsClient()
 
     session = session_client.session_path(self.project_id, self.session_id)
