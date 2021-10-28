@@ -1,6 +1,6 @@
 # aifo-client
 
-This project has no affiliation to the SBB.
+This project has no affiliation to SBB.
 
 This application requires:
 ```
