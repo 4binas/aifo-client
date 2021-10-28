@@ -1,4 +1,7 @@
 # aifo-client
+
+This project has no affiliation to the SBB.
+
 This application requires:
 ```
 pip install google-cloud-dialogflow
