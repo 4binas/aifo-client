@@ -4,6 +4,8 @@ This application requires:
 pip install google-cloud-dialogflow
 pip install Pillow
 ```
+The key.json file with the googel application credentials has to be placed in this directory.
+
 To start it use:
 ```
 python app.py
