@@ -14,4 +14,4 @@ To start it use:
 python app.py
 ```
 
-The GUI was inspired by [python-engineer](https://github.com/python-engineer/pytorch-chatbot).
+The GUI was inspired by [python-engineer](https://github.com/python-engineer/python-fun).
